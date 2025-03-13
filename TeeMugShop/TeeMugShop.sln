@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeMugShop.Application", "TeeMugShop.Application\TeeMugShop.Application.csproj", "{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeMugShop.Domain", "TeeMugShop.Domain\TeeMugShop.Domain.csproj", "{19CD0E42-C305-4E01-9855-F1794AC9AFFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeMugShop.Infrastructure", "TeeMugShop.Infrastructure\TeeMugShop.Infrastructure.csproj", "{C60D1F02-6D63-445C-A3BF-265C61870504}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeMugShop.Tests", "TeeMugShop.Tests\TeeMugShop.Tests.csproj", "{741987BA-05FC-492E-A4FB-7C912D76261B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeMugShop.API", "TeeMugShop.API\TeeMugShop.API.csproj", "{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CD0E42-C305-4E01-9855-F1794AC9AFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CD0E42-C305-4E01-9855-F1794AC9AFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CD0E42-C305-4E01-9855-F1794AC9AFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CD0E42-C305-4E01-9855-F1794AC9AFFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60D1F02-6D63-445C-A3BF-265C61870504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60D1F02-6D63-445C-A3BF-265C61870504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60D1F02-6D63-445C-A3BF-265C61870504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60D1F02-6D63-445C-A3BF-265C61870504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741987BA-05FC-492E-A4FB-7C912D76261B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741987BA-05FC-492E-A4FB-7C912D76261B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741987BA-05FC-492E-A4FB-7C912D76261B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741987BA-05FC-492E-A4FB-7C912D76261B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
