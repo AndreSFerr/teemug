@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Projetos\\teemug\\TeeMugShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5A64C5C-4938-4352-8464-26A0956030F7}|TeeMugShop.Test\\TeeMugShop.Test.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A64C5C-4938-4352-8464-26A0956030F7}|TeeMugShop.Test\\TeeMugShop.Test.csproj|solutionrelative:teemugshop.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\teemugshop.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\teemugshop.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,54 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Test\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Test\\UnitTest1.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Test\\UnitTest1.cs",
-              "RelativeToolTip": "TeeMugShop.Test\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T20:35:48.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeeMugShop.API",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\TeeMugShop.API.csproj",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\TeeMugShop.API.csproj",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\TeeMugShop.API.csproj",
-              "RelativeToolTip": "TeeMugShop.API\\TeeMugShop.API.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-14T20:34:58.549Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TeeMugShop.API\\appsettings.json",
+              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
+              "RelativeToolTip": "TeeMugShop.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T20:36:43.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "TeeMugShop.API\\appsettings.Development.json",
               "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.Development.json",
               "RelativeToolTip": "TeeMugShop.API\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-14T18:57:47.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Program.cs",
               "RelativeDocumentMoniker": "TeeMugShop.API\\Program.cs",
@@ -86,19 +65,6 @@
               "ViewState": "AQIAAFoAAAAAAAAAAAAcwHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T18:51:57.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\appsettings.json",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
-              "RelativeToolTip": "TeeMugShop.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T18:49:40.649Z",
               "EditorCaption": ""
             }
           ]
