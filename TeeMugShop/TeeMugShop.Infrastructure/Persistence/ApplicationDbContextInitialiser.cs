@@ -6,21 +6,21 @@ namespace TeeMugShop.Infrastructure.Persistence
 {
     public class ApplicationDbContextInitialiser
     {
-        private const string AdminDevelopmentPassword = "123.abc.ABC";
-        private const string AdminDevelopmentUsername = "admin";
-        private const string AdminDevelopmentEmail = "administrator@localhost";
-        private const string AdminDevelopmentName = "Admin";
+        private const string AdminDefaultUserName = "admin";
+        private const string AdminDefaultEmail = "administrator@localhost";
+        private const string AdminDefaultFullName = "Administrator";
+        private const string AdminDefaultPassword = "123.abc.ABC";
 
         private readonly ILogger<ApplicationDbContextInitialiser> _logger;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly RoleManager<IdentityRole<Guid>> _roleManager;
+        private readonly RoleManager<ApplicationRole> _roleManager;
 
         public ApplicationDbContextInitialiser(
             ILogger<ApplicationDbContextInitialiser> logger,
             ApplicationDbContext context,
             UserManager<ApplicationUser> userManager,
-            RoleManager<IdentityRole<Guid>> roleManager)
+            RoleManager<ApplicationRole> roleManager)
         {
             _logger = logger;
             _context = context;
@@ -42,12 +42,12 @@ namespace TeeMugShop.Infrastructure.Persistence
             }
         }
 
-        public async Task SeedAsync()
+        private async Task SeedAsync()
         {
             try
             {
                 await SeedRolesAsync();
-                await SeedAdministratorUserAsync();
+                await SeedAdminUserAsync();
             }
             catch (Exception ex)
             {
@@ -64,31 +64,41 @@ namespace TeeMugShop.Infrastructure.Persistence
             {
                 if (!await _roleManager.RoleExistsAsync(roleName))
                 {
-                    await _roleManager.CreateAsync(new IdentityRole<Guid>(roleName));
+                    // 👇 
+                    await _roleManager.CreateAsync(new ApplicationRole
+                    {
+                        Name = roleName,
+                        NormalizedName = roleName.ToUpperInvariant()
+                    });
                 }
             }
         }
 
-        private async Task SeedAdministratorUserAsync()
+
+        private async Task SeedAdminUserAsync()
         {
-            var adminUser = await _userManager.FindByNameAsync(AdminDevelopmentUsername);
+            var adminUser = await _userManager.FindByNameAsync(AdminDefaultUserName);
 
             if (adminUser == null)
             {
-                var admin = new ApplicationUser
+                var user = new ApplicationUser
                 {
-                    UserName = AdminDevelopmentUsername,
-                    Email = AdminDevelopmentEmail,
-                    FullName = AdminDevelopmentName,
+                    UserName = AdminDefaultUserName,
+                    Email = AdminDefaultEmail,
+                    FullName = AdminDefaultFullName,
                     EmailConfirmed = true,
                     IsActive = true
                 };
 
-                var result = await _userManager.CreateAsync(admin, AdminDevelopmentPassword);
+                var createResult = await _userManager.CreateAsync(user, AdminDefaultPassword);
 
-                if (result.Succeeded)
+                if (createResult.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(admin, "Admin");
+                    await _userManager.AddToRoleAsync(user, "Admin");
+                }
+                else
+                {
+                    _logger.LogError("Failed to create admin user: {errors}", string.Join(", ", createResult.Errors.Select(e => e.Description)));
                 }
             }
         }

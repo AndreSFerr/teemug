@@ -1,25 +1,31 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using TeeMugShop.Application.Common.Interfaces;
 using TeeMugShop.Application;
+using TeeMugShop.Application.Common.Interfaces;
 using TeeMugShop.Domain.Entities.Application;
 using TeeMugShop.Infrastructure.Persistence;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// ==========================================
+// Services Configuration
+// ==========================================
+
 var configuration = builder.Configuration;
 var services = builder.Services;
 
+// Database
 services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
     ));
 
+// Clean Architecture: DbContext via interface
 services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
-// ✅ Identity configurado UMA única vez
-services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
+// Identity configuration com ApplicationUser e ApplicationRole
+services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequireLowercase = true;
@@ -30,29 +36,11 @@ services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
 
-services.AddControllers();
-services.AddEndpointsApiExplorer();
-services.AddSwaggerGen();
-
-// ✅ Application Layer
-services.AddApplication();
-
-// ✅ CORS
-services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-});
-
-
+// Authentication com redes sociais
 services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
 })
 .AddCookie()
 .AddGoogle(options =>
@@ -70,25 +58,45 @@ services.AddAuthentication(options =>
         ?? throw new InvalidOperationException("Missing Facebook AppSecret in configuration.");
 });
 
+// Swagger
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
+
+// Application Layer
+services.AddApplication();
+
+// Inicializador do banco
 services.AddScoped<ApplicationDbContextInitialiser>();
+
+// Controllers
+services.AddControllers();
+
+// CORS
+services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    dbContext.Database.Migrate();
-}
+// ==========================================
+// Pipeline
+// ==========================================
 
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     dbContext.Database.Migrate();
 
-    var initializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
-    await initializer.InitialiseAsync(); 
+    // Inicializar banco: cria roles e admin se não existirem
+    var dbInitializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
+    await dbInitializer.InitialiseAsync();
 }
-
 
 if (app.Environment.IsDevelopment())
 {
@@ -100,7 +108,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseCors("AllowAll");
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeeMugShop.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d40f5bf8b2edd258e16a875a00fec6b77eeecfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b75e2553e22019763089f5738d6ee9457f19150")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeeMugShop.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeeMugShop.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

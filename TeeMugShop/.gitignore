@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build e binários
+bin/
+obj/
+out/
+
+# Configurações locais
+*.log
+*.tmp
+
+# Rider IDE
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

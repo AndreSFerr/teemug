@@ -18,6 +18,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, Applicati
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
+
+        public DbSet<ApplicationRole> ApplicationRoles => Set<ApplicationRole>();
         // DbSets
         public DbSet<Product> Products => Set<Product>();
         public DbSet<Order> Orders => Set<Order>();
