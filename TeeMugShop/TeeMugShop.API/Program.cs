@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System;
 using TeeMugShop.Application;
 using TeeMugShop.Application.Common.Interfaces;
 using TeeMugShop.Domain.Entities.Application;
@@ -15,11 +17,41 @@ var configuration = builder.Configuration;
 var services = builder.Services;
 
 // Database
-services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(
-        configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
-    ));
+//services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseMySql(
+//        configuration.GetConnectionString("DefaultConnection"),
+//        ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
+//));
+
+services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+    var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+    int retry = 0;
+    int maxRetry = 10;
+    bool connected = false;
+    while (!connected && retry < maxRetry)
+    {
+        try
+        {
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            connected = true;
+        }
+        catch (MySqlConnector.MySqlException)
+        {
+            retry++;
+            Console.WriteLine($"[Retry {retry}] Aguardando MySQL subir...");
+            Thread.Sleep(5000); // 5 segundos
+        }
+    }
+
+    if (!connected)
+    {
+        throw new Exception("Não foi possível conectar ao banco de dados após várias tentativas.");
+    }
+});
+
 
 // Clean Architecture: DbContext via interface
 services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
@@ -82,6 +114,16 @@ services.AddCors(options =>
     });
 });
 
+services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "TeeMugShop API", Version = "v1" });
+    c.AddServer(new OpenApiServer
+    {
+        Url = "http://localhost:8080"
+    });
+});
+
+
 var app = builder.Build();
 
 // ==========================================
@@ -104,7 +146,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
 app.UseStaticFiles();
 app.UseRouting();
 app.UseCors("AllowAll");

@@ -9,7 +9,8 @@
     <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
     <ContainerRuntimeIdentifier>win-x64</ContainerRuntimeIdentifier>
     <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809</ContainerBaseImage>
-    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>    
+    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

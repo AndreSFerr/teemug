@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   mysql:
     image: mysql:8.0
@@ -10,9 +12,15 @@ services:
       MYSQL_PASSWORD: teemug123
     ports:
       - "3307:3306"
-    volumes:
-      - teemugshop_db_data:/var/lib/mysql  
 
-volumes:
-  teemugshop_db_data:  
-
+  api:
+    build:
+      context: .
+      dockerfile: TeeMugShop.API/Dockerfile
+    container_name: teemugshop-api
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
