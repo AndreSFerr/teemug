@@ -70,6 +70,7 @@ services.AddAuthentication(options =>
         ?? throw new InvalidOperationException("Missing Facebook AppSecret in configuration.");
 });
 
+services.AddScoped<ApplicationDbContextInitialiser>();
 
 var app = builder.Build();
 
@@ -78,6 +79,16 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     dbContext.Database.Migrate();
 }
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    dbContext.Database.Migrate();
+
+    var initializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
+    await initializer.InitialiseAsync(); 
+}
+
 
 if (app.Environment.IsDevelopment())
 {

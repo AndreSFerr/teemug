@@ -8,5 +8,6 @@ namespace TeeMugShop.Domain.Entities.Application
         public string? Address { get; set; }
         public string? NIF { get; set; }
         public string? Phone { get; set; }
+        public bool IsActive { get; set; }
     }
 }

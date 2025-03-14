@@ -125,7 +125,6 @@ C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\refint\TeeMugShop.
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\TeeMugShop.API.pdb
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\TeeMugShop.API.genruntimeconfig.cache
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\ref\TeeMugShop.API.dll
-C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\TeeMugShop.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\obj\Debug\net8.0\TeeMugShop.API.sourcelink.json
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
