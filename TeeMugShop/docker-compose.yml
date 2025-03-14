@@ -1,4 +1,4 @@
-version: '3.8'
+﻿version: '3.8'
 
 services:
   api:
@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: teemugshop-api
     ports:
-      - "8080:80"
+      - "7580:80"  # ✅ Corrigido: sua máquina escuta 7580 e redireciona para a porta 80 do container (que o ASP.NET está escutando)
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: "Server=teemugshop-mysql;Port=3306;Database=teemugshopdb;User=teemug;Password=teemug123"
