@@ -1,13 +1,16 @@
-// src/pages/Login.tsx
-import { SocialLogin } from '../components/auth/SocialLogin';
+// src/router/AppRouter.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from '@/pages/Home';
+import Login from '@/pages/Login';
 
-const Login = () => {
-  return (
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">Entrar na TeeMug Shop</h2>
-      <SocialLogin />
-    </div>
-  );
-};
+const AppRouter = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      {/* Outros: T-Shirts, Mugs, Register, Cart... */}
+    </Routes>
+  </BrowserRouter>
+);
 
-export default Login;
+export default AppRouter;
