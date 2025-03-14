@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: src/TeeMugShop.API/Dockerfile
+    container_name: teemugshop-api
+    ports:
+      - "5000:5000"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=teemugshop-mysql;Port=3306;Database=teemugshopdb;User=teemug;Password=teemug123"
+    networks:
+      - teemug-network
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.0
+    container_name: teemugshop-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: teemugshopdb
+      MYSQL_USER: teemug
+      MYSQL_PASSWORD: teemug123
+    ports:
+      - "3306:3306"
+    networks:
+      - teemug-network
+    volumes:
+      - teemugshop-db-data:/var/lib/mysql
+
+volumes:
+  teemugshop-db-data:
+
+networks:
+  teemug-network:
+    external: true

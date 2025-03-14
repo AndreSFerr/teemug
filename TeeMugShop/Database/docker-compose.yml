@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: teemugshop-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: teemugshopdb
+      MYSQL_USER: teemug
+      MYSQL_PASSWORD: teemug123
+    ports:
+      - "3307:3306"
+    volumes:
+      - teemugshop_db_data:/var/lib/mysql  
+
+volumes:
+  teemugshop_db_data:  
+
