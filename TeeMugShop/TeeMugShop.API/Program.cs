@@ -4,6 +4,7 @@ using TeeMugShop.Application.Common.Interfaces;
 using TeeMugShop.Application;
 using TeeMugShop.Domain.Entities.Application;
 using TeeMugShop.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -46,6 +47,29 @@ services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
+
+
+services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie()
+.AddGoogle(options =>
+{
+    options.ClientId = configuration["Authentication:Google:ClientId"]
+        ?? throw new InvalidOperationException("Missing Google ClientId in configuration.");
+    options.ClientSecret = configuration["Authentication:Google:ClientSecret"]
+        ?? throw new InvalidOperationException("Missing Google ClientSecret in configuration.");
+})
+.AddFacebook(options =>
+{
+    options.AppId = configuration["Authentication:Facebook:AppId"]
+        ?? throw new InvalidOperationException("Missing Facebook AppId in configuration.");
+    options.AppSecret = configuration["Authentication:Facebook:AppSecret"]
+        ?? throw new InvalidOperationException("Missing Facebook AppSecret in configuration.");
+});
+
 
 var app = builder.Build();
 

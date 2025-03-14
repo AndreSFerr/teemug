@@ -10,3 +10,4 @@ C:\Projetos\teemug\TeeMugShop\TeeMugShop.Domain\obj\Debug\net8.0\TeeMugShop.Doma
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Domain\obj\Debug\net8.0\refint\TeeMugShop.Domain.dll
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Domain\obj\Debug\net8.0\TeeMugShop.Domain.pdb
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Domain\obj\Debug\net8.0\ref\TeeMugShop.Domain.dll
+C:\Projetos\teemug\TeeMugShop\TeeMugShop.Domain\obj\Debug\net8.0\TeeMugShop.Domain.sourcelink.json

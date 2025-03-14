@@ -13,3 +13,4 @@ C:\Projetos\teemug\TeeMugShop\TeeMugShop.Application\obj\Debug\net8.0\TeeMugShop
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Application\obj\Debug\net8.0\refint\TeeMugShop.Application.dll
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Application\obj\Debug\net8.0\TeeMugShop.Application.pdb
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Application\obj\Debug\net8.0\ref\TeeMugShop.Application.dll
+C:\Projetos\teemug\TeeMugShop\TeeMugShop.Application\obj\Debug\net8.0\TeeMugShop.Application.sourcelink.json

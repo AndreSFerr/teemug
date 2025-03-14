@@ -126,3 +126,4 @@ C:\Projetos\teemug\TeeMugShop\TeeMugShop.Tests\obj\Debug\net8.0\refint\TeeMugSho
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Tests\obj\Debug\net8.0\TeeMugShop.Tests.pdb
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Tests\obj\Debug\net8.0\TeeMugShop.Tests.genruntimeconfig.cache
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Tests\obj\Debug\net8.0\ref\TeeMugShop.Tests.dll
+C:\Projetos\teemug\TeeMugShop\TeeMugShop.Tests\obj\Debug\net8.0\TeeMugShop.Tests.sourcelink.json

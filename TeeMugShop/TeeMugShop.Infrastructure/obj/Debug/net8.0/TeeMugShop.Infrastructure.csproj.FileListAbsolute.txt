@@ -17,3 +17,4 @@ C:\Projetos\teemug\TeeMugShop\TeeMugShop.Infrastructure\obj\Debug\net8.0\refint\
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Infrastructure\obj\Debug\net8.0\TeeMugShop.Infrastructure.pdb
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Infrastructure\obj\Debug\net8.0\TeeMugShop.Infrastructure.genruntimeconfig.cache
 C:\Projetos\teemug\TeeMugShop\TeeMugShop.Infrastructure\obj\Debug\net8.0\ref\TeeMugShop.Infrastructure.dll
+C:\Projetos\teemug\TeeMugShop\TeeMugShop.Infrastructure\obj\Debug\net8.0\TeeMugShop.Infrastructure.sourcelink.json

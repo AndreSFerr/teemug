@@ -3,144 +3,16 @@
   "WorkspaceRootPath": "C:\\Projetos\\teemug\\TeeMugShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\handlers\\getcartbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\handlers\\getcartbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\handlers\\getallcartsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\handlers\\getallcartsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\handlers\\deletecartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\handlers\\deletecartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\handlers\\updatecartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\handlers\\updatecartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\handlers\\createcartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\handlers\\createcartcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\queries\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\queries\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\queries\\getallcartsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\queries\\getallcartsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\commands\\deletecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\commands\\deletecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\commands\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\commands\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\cart\\commands\\createcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\cart\\commands\\createcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.domain\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|solutionrelative:teemugshop.domain\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\accounts\\handlers\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\accounts\\handlers\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\accounts\\commands\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\accounts\\commands\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\accounts\\validators\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\accounts\\validators\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\handlers\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\handlers\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\handlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\handlers\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\handlers\\getallproductsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\handlers\\getallproductsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\handlers\\deleteproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\handlers\\deleteproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\handlers\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\handlers\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\queries\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\commands\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\commands\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\products\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\products\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\teemugshop.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\teemugshop.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60D1F02-6D63-445C-A3BF-265C61870504}|TeeMugShop.Infrastructure\\TeeMugShop.Infrastructure.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60D1F02-6D63-445C-A3BF-265C61870504}|TeeMugShop.Infrastructure\\TeeMugShop.Infrastructure.csproj|solutionrelative:teemugshop.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.domain\\entities\\application\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|solutionrelative:teemugshop.domain\\entities\\application\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.domain\\entities\\application\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|solutionrelative:teemugshop.domain\\entities\\application\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.domain\\entities\\application\\applicationuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19CD0E42-C305-4E01-9855-F1794AC9AFFE}|TeeMugShop.Domain\\TeeMugShop.Domain.csproj|solutionrelative:teemugshop.domain\\entities\\application\\applicationuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2134E1-6A0C-4A30-9DCA-D718FD34F1E2}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A86AF6A0-FEF0-4C1F-B7E8-9881B5664EE8}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,457 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\CartController.cs",
-              "RelativeToolTip": "TeeMugShop.API\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:58:20.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetCartByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetCartByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetCartByIdQueryHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetCartByIdQueryHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetCartByIdQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:57:03.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetAllCartsQueryHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetAllCartsQueryHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetAllCartsQueryHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetAllCartsQueryHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\GetAllCartsQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:56:44.613Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TeeMugShop.API\\appsettings.json",
+              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
+              "RelativeToolTip": "TeeMugShop.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T08:56:26.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteCartCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\DeleteCartCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\DeleteCartCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\DeleteCartCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\DeleteCartCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:56:21.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateCartCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\UpdateCartCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\UpdateCartCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\UpdateCartCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\UpdateCartCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:56:00.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateCartCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\CreateCartCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\CreateCartCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Handlers\\CreateCartCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Handlers\\CreateCartCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:55:38.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetCartByIdQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetCartByIdQuery.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetCartByIdQuery.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetCartByIdQuery.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetCartByIdQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:55:13.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetAllCartsQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetAllCartsQuery.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetAllCartsQuery.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetAllCartsQuery.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Queries\\GetAllCartsQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:54:51.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DeleteCartCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\DeleteCartCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\DeleteCartCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\DeleteCartCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\DeleteCartCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:54:31.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdateCartCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\UpdateCartCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\UpdateCartCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\UpdateCartCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\UpdateCartCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:54:07.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateCartCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\CreateCartCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\CreateCartCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Cart\\Commands\\CreateCartCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Cart\\Commands\\CreateCartCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:53:41.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Cart.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Domain\\Entities\\Cart.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Cart.cs",
-              "RelativeToolTip": "TeeMugShop.Domain\\Entities\\Cart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:51:16.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "TeeMugShop.API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:35:25.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetProductByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetProductByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetProductByIdQueryHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetProductByIdQueryHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetProductByIdQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:28:08.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetAllProductsQueryHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetAllProductsQueryHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetAllProductsQueryHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetAllProductsQueryHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\GetAllProductsQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:27:48.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DeleteProductCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\DeleteProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\DeleteProductCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\DeleteProductCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\DeleteProductCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:27:11.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UpdateProductCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\UpdateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\UpdateProductCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\UpdateProductCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\UpdateProductCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:26:45.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "TeeMugShop.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:43:09.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Program.cs",
               "RelativeDocumentMoniker": "TeeMugShop.API\\Program.cs",
               "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Program.cs",
               "RelativeToolTip": "TeeMugShop.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABYAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:36:20.421Z",
+              "WhenOpened": "2025-03-14T08:56:03.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RegisterUserCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Commands\\RegisterUserCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Accounts\\Commands\\RegisterUserCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Commands\\RegisterUserCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Accounts\\Commands\\RegisterUserCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TeeMugShop.API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TeeMugShop.API\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:39:29.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:58:20.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RegisterUserCommandValidator.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Validators\\RegisterUserCommandValidator.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Accounts\\Validators\\RegisterUserCommandValidator.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Validators\\RegisterUserCommandValidator.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Accounts\\Validators\\RegisterUserCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:36:38.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RegisterUserCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\RegisterUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\RegisterUserCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\RegisterUserCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\RegisterUserCommandHandler.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAMAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:37:28.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CreateProductCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\CreateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\CreateProductCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Handlers\\CreateProductCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Handlers\\CreateProductCommandHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:50:03.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CreateProductCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\CreateProductCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Commands\\CreateProductCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\CreateProductCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Commands\\CreateProductCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:22:07.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "GetProductByIdQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Queries\\GetProductByIdQuery.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Queries\\GetProductByIdQuery.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Queries\\GetProductByIdQuery.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Queries\\GetProductByIdQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:25:41.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GetAllProductsQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Queries\\GetAllProductsQuery.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Queries\\GetAllProductsQuery.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Queries\\GetAllProductsQuery.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Queries\\GetAllProductsQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:25:04.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "DeleteProductCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\DeleteProductCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Commands\\DeleteProductCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\DeleteProductCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Commands\\DeleteProductCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:23:05.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UpdateProductCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\UpdateProductCommand.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Products\\Commands\\UpdateProductCommand.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Products\\Commands\\UpdateProductCommand.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Products\\Commands\\UpdateProductCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T21:22:24.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TeeMugShop.Application",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\TeeMugShop.Application.csproj",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\TeeMugShop.Application.csproj",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\TeeMugShop.Application.csproj",
-              "RelativeToolTip": "TeeMugShop.Application\\TeeMugShop.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-13T20:46:20.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Domain\\Entities\\Application\\ApplicationUser.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationUser.cs",
-              "RelativeToolTip": "TeeMugShop.Domain\\Entities\\Application\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:28:28.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ApplicationUserRole.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationUserRole.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Domain\\Entities\\Application\\ApplicationUserRole.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationUserRole.cs",
-              "RelativeToolTip": "TeeMugShop.Domain\\Entities\\Application\\ApplicationUserRole.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:27:49.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ApplicationRole.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationRole.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Domain\\Entities\\Application\\ApplicationRole.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Domain\\Entities\\Application\\ApplicationRole.cs",
-              "RelativeToolTip": "TeeMugShop.Domain\\Entities\\Application\\ApplicationRole.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:27:06.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:13:55.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TeeMugShop.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:11:48.775Z",
+              "WhenOpened": "2025-03-14T08:53:28.24Z",
               "EditorCaption": ""
             }
           ]
