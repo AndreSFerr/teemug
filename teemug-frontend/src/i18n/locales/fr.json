@@ -1,4 +1,16 @@
 {
-    "loginTitle": "Se connecter à TeeMug Shop"
-  }
-  
+  "loginTitle": "Se connecter à TeeMug Shop",
+  "loginWithSocial": "Se connecter avec les réseaux sociaux",
+  "orLoginWithEmail": "Se connecter avec un e-mail",
+  "loginWithEmail": "Se connecter avec un nom d'utilisateur et un mot de passe",
+  "register": "S'inscrire",
+  "goBack": "Retour",
+  "registerTitle": "Créer un compte",
+  "email": "E-mail",
+  "password": "Mot de passe",
+  "rememberMe": "Se souvenir de moi",
+  "fullName": "Nom complet",
+  "address": "Adresse",
+  "nif": "Numéro d'identification fiscale",
+  "phone": "Téléphone"
+}

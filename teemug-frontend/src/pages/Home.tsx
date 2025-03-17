@@ -1,6 +1,7 @@
 import ProductCarousel from "@/components/products/ProductCarousel";
 
 const Home = () => {
+
   const camisetas = Array.from({ length: 12 }).map((_, index) => ({
     name: `Camiseta ${index + 1}`,
     description: `Descrição para camiseta ${index + 1}`,
@@ -15,17 +16,16 @@ const Home = () => {
     image: `https://picsum.photos/seed/caneca${index}/300/200`,
   }));
 
-  const meiosPagamento = ["Visa", "Mastercard", "PayPal", "MBWay"].map((nome, index) => ({
+  const meiosPagamento = ["Visa", "Mastercard", "PayPal", "MBWay"].map((nome) => ({
     name: nome,
-    image: `https://placehold.co/300x200?text=${encodeURIComponent(nome)}`,
+    image: `https://placehold.co/150x100?text=${encodeURIComponent(nome)}`,
   }));
 
   return (
     <div className="d-flex flex-column min-vh-100">
       <ProductCarousel title="Camisetas" products={camisetas} carouselId="carouselCamisetas" />
       <ProductCarousel title="Canecas" products={canecas} carouselId="carouselCanecas" />
-
-      {/* Meios de pagamento dinâmicos */}
+    
       <section className="container py-5">
         <h2 className="text-center mb-4">Meios de Pagamento</h2>
         <div className="row justify-content-center text-center g-4">
@@ -39,11 +39,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
-
-      <footer className="bg-dark text-light text-center py-3 mt-auto">
-        &copy; {new Date().getFullYear()} TeeMug Shop - Todos os direitos reservados.
-      </footer>
+      </section>  
     </div>
   );
 };

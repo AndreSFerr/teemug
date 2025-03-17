@@ -42,18 +42,14 @@ const Navbar = () => {
                 {!isLoggedIn ? (
                   <>
                     <li><a className="dropdown-item" href="/login">Login</a></li>
-                    <li><a className="dropdown-item" href="/register">Register</a></li>
-                    <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/login-google">Login with Google</a></li>
-                    <li><a className="dropdown-item" href="/login-facebook">Login with Facebook</a></li>
+                    <li><a className="dropdown-item" href="/register">Register</a></li>                    
                   </>
                 ) : (
                   <li><a className="dropdown-item" href="/logout">Logout</a></li>
                 )}
               </ul>
             </li>
-
-            {/* Idiomas */}
+           
             <li className="nav-item dropdown ms-2">
               <a
                 className="nav-link dropdown-toggle"

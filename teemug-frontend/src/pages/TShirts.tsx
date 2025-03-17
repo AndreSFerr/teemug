@@ -4,7 +4,7 @@ const TShirt = () => {
     name: `Product ${index + 1}`,
     description: `Description for product ${index + 1}`,
     price: (10 + index).toFixed(2),
-    image: `https://picsum.photos/300/200?random=${index}`,
+    image: `https://picsum.photos/300/200?random=${index}&t=${Date.now()}`,
   }));
 
   return (

@@ -1,4 +1,16 @@
 {
-    "loginTitle": "Sign in to TeeMug Shop"
-  }
-  
+  "loginTitle": "Sign in to TeeMug Shop",
+  "loginWithSocial": "Sign in with social networks",
+  "orLoginWithEmail": "Sign in with email",
+  "loginWithEmail": "Sign in with username and password",
+  "register": "Register",
+  "goBack": "Go back",
+  "registerTitle": "Sign up",
+  "email": "Email",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "fullName": "Full name",
+  "address": "Address",
+  "nif": "Tax Identification Number",
+  "phone": "Phone"
+}

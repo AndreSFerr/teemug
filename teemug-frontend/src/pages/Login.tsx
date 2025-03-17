@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { SocialLogin } from '@/components/auth/SocialLogin';
 
 const Login = () => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   return (
     <div className="container mt-5">

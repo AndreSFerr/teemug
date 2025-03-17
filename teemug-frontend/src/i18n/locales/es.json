@@ -1,4 +1,16 @@
 {
-    "loginTitle": "Iniciar sesión en TeeMug Shop"
-  }
-  
+  "loginTitle": "Iniciar sesión en TeeMug Shop",
+  "loginWithSocial": "Iniciar sesión con redes sociales",
+  "orLoginWithEmail": "Iniciar sesión con correo electrónico",
+  "loginWithEmail": "Iniciar sesión con usuario y contraseña",
+  "register": "Registrarse",
+  "goBack": "Volver",
+  "registerTitle": "Crear cuenta",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "rememberMe": "Recuérdame",
+  "fullName": "Nombre completo",
+  "address": "Dirección",
+  "nif": "Número de Identificación Fiscal",
+  "phone": "Teléfono"
+}
