@@ -6,6 +6,9 @@ import Mugs from "@/pages/Mugs";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import LoginTraditional from "@/pages/ManualLogin";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import DataDeletion from "@/pages/DataDeletion";
+
 const AppRouter = () => {
   return (
     <BrowserRouter>
@@ -18,6 +21,8 @@ const AppRouter = () => {
         <Route path="/login" element={<Login />} />     
         <Route path="/register" element={<Register />} />
         <Route path="/login-traditional" element={<LoginTraditional />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/data-deletion" element={<DataDeletion />} />
       </Routes>
     </BrowserRouter>
   );

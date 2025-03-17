@@ -25,7 +25,7 @@ const LoginFacebookButton = () => {
 
   return (
     <FacebookLogin className="btn btn-primary"
-      appId="SEU_FACEBOOK_APP_ID"
+      appId={import.meta.env.VITE_FACEBOOK_APP_ID}
       onSuccess={handleFacebookSuccess}
       onFail={(err) => console.log('Erro Facebook:', err)}
     />

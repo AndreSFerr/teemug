@@ -15,7 +15,7 @@ const MainLayout = () => {
         </div>
       </div>
       <footer className="bg-dark text-light text-center py-3 mt-auto">
-        &copy; {new Date().getFullYear()} TeeMug Shop - Todos os direitos reservados.
+        &copy; {new Date().getFullYear()} TShirts Mug Shop Co - Todos os direitos reservados.
       </footer>
     </div>
   );

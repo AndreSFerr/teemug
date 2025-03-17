@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom px-3">
       <div className="container-fluid justify-content-between">
-        <a className="navbar-brand" href="/">TeeMug Shop</a>
+        <a className="navbar-brand" href="/">TShirt Mug Shop</a>
 
         <button
           className="navbar-toggler"
