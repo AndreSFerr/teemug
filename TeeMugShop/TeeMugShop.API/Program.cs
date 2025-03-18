@@ -32,34 +32,38 @@ builder.Services.Configure<JwtSettings>(configuration.GetSection("Authentication
 var services = builder.Services;
 
 // Banco de Dados
-services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
-{
-    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
-    var connectionString = configuration.GetConnectionString("DefaultConnection");
+services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection")))
+);
 
-    int retry = 0;
-    int maxRetry = 10;
-    bool connected = false;
-    while (!connected && retry < maxRetry)
-    {
-        try
-        {
-            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-            connected = true;
-        }
-        catch (MySqlConnector.MySqlException)
-        {
-            retry++;
-            Console.WriteLine($"[Retry {retry}] Aguardando MySQL subir...");
-            Thread.Sleep(5000); // 5 segundos
-        }
-    }
+//services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
+//{
+//    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+//    var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-    if (!connected)
-    {
-        throw new Exception("Não foi possível conectar ao banco de dados após várias tentativas.");
-    }
-});
+//    int retry = 0;
+//    int maxRetry = 10;
+//    bool connected = false;
+//    while (!connected && retry < maxRetry)
+//    {
+//        try
+//        {
+//            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+//            connected = true;
+//        }
+//        catch (MySqlConnector.MySqlException)
+//        {
+//            retry++;
+//            Console.WriteLine($"[Retry {retry}] Aguardando MySQL subir...");
+//            Thread.Sleep(5000); // 5 segundos
+//        }
+//    }
+
+//    if (!connected)
+//    {
+//        throw new Exception("Não foi possível conectar ao banco de dados após várias tentativas.");
+//    }
+//});
 
 // Identity com ApplicationUser
 services.AddIdentity<ApplicationUser, ApplicationRole>(options =>

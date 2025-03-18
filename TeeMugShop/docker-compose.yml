@@ -1,22 +1,26 @@
 ﻿version: '3.8'
 
 services:
-  api:
+   api:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: teemugshop-api
     ports:
-      - "7580:80"  # ✅ Corrigido: sua máquina escuta 7580 e redireciona para a porta 80 do container (que o ASP.NET está escutando)
+      - "5150:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: "Server=teemugshop-mysql;Port=3306;Database=teemugshopdb;User=teemug;Password=teemug123"
+      DB_CONNECTION_STRING: "Server=teemugshop-mysql;Port=3306;Database=teemugshopdb;User=teemug;Password=teemug123"
+      JWT_ISSUER: "TShirtLoginGoogle"
+      JWT_AUDIENCE: "http://localhost:5173"
+      JWT_SECRET: "zG4vB@1pX#3rM9eNfW8jLqK$5TdY7VuZqNcH%4xCkL3sW9rPqE8vZ#XtG5YqMwRs"
+      JWT_EXPIRATION: "6"
     depends_on:
       - mysql
     networks:
       - teemug-network
-
-  mysql:
+      
+   mysql:
     image: mysql:8.0
     container_name: teemugshop-mysql
     environment:
