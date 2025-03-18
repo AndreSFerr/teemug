@@ -13,6 +13,6 @@ namespace TeeMugShop.Application.Feactures.Accounts.Commands
     public class ExternalLoginTokenCommand : IRequest<ExternalLoginTokenResult>
     {
         public string Provider { get; set; } = string.Empty; // "Google" ou "Facebook"
-        public string AccessToken { get; set; } = string.Empty; // Token enviado pelo frontend
+        public string Token { get; set; } = string.Empty; // Token enviado pelo frontend
     }
 }

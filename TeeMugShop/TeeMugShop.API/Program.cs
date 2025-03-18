@@ -1,28 +1,36 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using System;
 using TeeMugShop.Application;
 using TeeMugShop.Application.Common.Interfaces;
+using TeeMugShop.Application.Common.Settings;
 using TeeMugShop.Domain.Entities.Application;
 using TeeMugShop.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ==========================================
-// Services Configuration
-// ==========================================
+// ===================
+// Load .env variables
+// ===================
+DotNetEnv.Env.Load(); // carrega do arquivo .env na raiz
 
 var configuration = builder.Configuration;
+
+// Substitui com variáveis de ambiente
+configuration["ConnectionStrings:DefaultConnection"] = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+configuration["Authentication:JwtSettings:Issuer"] = Environment.GetEnvironmentVariable("JWT_ISSUER");
+configuration["Authentication:JwtSettings:Audience"] = Environment.GetEnvironmentVariable("JWT_AUDIENCE");
+configuration["Authentication:JwtSettings:SecretKey"] = Environment.GetEnvironmentVariable("JWT_SECRET");
+configuration["Authentication:JwtSettings:TokenExpirationHours"] = Environment.GetEnvironmentVariable("JWT_EXPIRATION");
+
+// Bind JWT Settings
+builder.Services.Configure<JwtSettings>(configuration.GetSection("Authentication:JwtSettings"));
+
+// ===================
+// Configure Services
+// ===================
 var services = builder.Services;
 
-// Database
-//services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseMySql(
-//        configuration.GetConnectionString("DefaultConnection"),
-//        ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
-//));
-
+// Banco de Dados
 services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
 {
     var configuration = serviceProvider.GetRequiredService<IConfiguration>();
@@ -52,42 +60,30 @@ services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
     }
 });
 
-
-// Clean Architecture: DbContext via interface
-services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
-
-// Identity configuration com ApplicationUser e ApplicationRole
+// Identity com ApplicationUser
 services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequireLowercase = true;
-    options.Password.RequireUppercase = false;
-    options.Password.RequireNonAlphanumeric = false;
     options.Password.RequiredLength = 6;
+    options.Password.RequireNonAlphanumeric = false;
 })
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
 
-// Authentication com redes sociais
-services.AddAuthentication(options =>
+// JWT apenas (sem login social direto via backend)
+services.AddAuthentication(IdentityConstants.ApplicationScheme)
+    .AddCookie();
+
+// CORS
+services.AddCors(options =>
 {
-    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-})
-.AddCookie()
-.AddGoogle(options =>
-{
-    options.ClientId = configuration["Authentication:Google:ClientId"]
-        ?? throw new InvalidOperationException("Missing Google ClientId in configuration.");
-    options.ClientSecret = configuration["Authentication:Google:ClientSecret"]
-        ?? throw new InvalidOperationException("Missing Google ClientSecret in configuration.");
-})
-.AddFacebook(options =>
-{
-    options.AppId = configuration["Authentication:Facebook:AppId"]
-        ?? throw new InvalidOperationException("Missing Facebook AppId in configuration.");
-    options.AppSecret = configuration["Authentication:Facebook:AppSecret"]
-        ?? throw new InvalidOperationException("Missing Facebook AppSecret in configuration.");
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
 });
 
 // Swagger
@@ -96,48 +92,24 @@ services.AddSwaggerGen();
 
 // Application Layer
 services.AddApplication();
-
-// Inicializador do banco
+services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 services.AddScoped<ApplicationDbContextInitialiser>();
 
 // Controllers
 services.AddControllers();
 
-// CORS
-services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-});
-
-services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new() { Title = "TeeMugShop API", Version = "v1" });
-    c.AddServer(new OpenApiServer
-    {
-        Url = "http://localhost:8080"
-    });
-});
-
-
-var app = builder.Build();
-
-// ==========================================
+// ===================
 // Pipeline
-// ==========================================
+// ===================
+var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     dbContext.Database.Migrate();
 
-    // Inicializar banco: cria roles e admin se não existirem
-    var dbInitializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
-    await dbInitializer.InitialiseAsync();
+    var initializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
+    await initializer.InitialiseAsync();
 }
 
 if (app.Environment.IsDevelopment())
@@ -145,8 +117,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-if (!app.Environment.IsDevelopment())
+else
 {
     app.UseHttpsRedirection();
 }

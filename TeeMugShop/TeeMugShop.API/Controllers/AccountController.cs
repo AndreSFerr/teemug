@@ -18,13 +18,13 @@ namespace TeeMugShop.API.Controllers
         private readonly IMediator _mediator;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
-
+      
         /// <summary>
         /// Initializes a new instance of the <see cref="AccountController"/> class.
         /// </summary>
         /// <param name="mediator">The MediatR instance for sending commands.</param>
         /// <param name="signInManager">ASP.NET Identity external sign-in manager.</param>
-        /// <param name="userManager">ASP.NET Identity user manager.</param>
+        /// <param name="userManager">ASP.NET Identity user manager.</param>      
         public AccountController(
             IMediator mediator,
             SignInManager<ApplicationUser> signInManager,
@@ -32,7 +32,7 @@ namespace TeeMugShop.API.Controllers
         {
             _mediator = mediator;
             _signInManager = signInManager;
-            _userManager = userManager;
+            _userManager = userManager;            
         }
 
         /// <summary>
@@ -107,6 +107,7 @@ namespace TeeMugShop.API.Controllers
             return Redirect(returnUrl ?? "/");
         }
 
+
         /// <summary>
         /// Performs login using OAuth token received from the frontend (Google/Facebook).
         /// </summary>
@@ -116,9 +117,11 @@ namespace TeeMugShop.API.Controllers
         public async Task<IActionResult> ExternalLoginToken([FromBody] ExternalLoginTokenCommand command)
         {
             var result = await _mediator.Send(command);
-            if (result.Success)
-                return Ok(result);
-            return BadRequest(result);
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
+      
     }
 }

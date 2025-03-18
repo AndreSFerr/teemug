@@ -1,22 +1,43 @@
-# Visual Studio
-.vs/
-*.user
+# 🔐 Arquivos sensíveis
+.env
+.env.*     # Ex: .env.local, .env.production
+
+# 🛠 Pastas de build (Frontend/Backend)
+dist/
+build/
+out/
+publish/
+wwwroot/
+
+# 📦 Node.js
+node_modules/
+
+# 📦 .NET
+bin/
+obj/
+*.db
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Build e binários
-bin/
-obj/
-out/
-
-# Configurações locais
-*.log
-*.tmp
-
-# Rider IDE
+# 🔍 IDEs e editores
+.vscode/
 .idea/
 
-# Sistema operacional
-.DS_Store
-Thumbs.db
+# 📁 Logs
+*.log
+
+# ⚙️ Config temporária
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# 📸 Snapshots de testes
+__snapshots__/
+
+# 🔒 Certificados locais
+*.pfx
+*.key
+*.crt

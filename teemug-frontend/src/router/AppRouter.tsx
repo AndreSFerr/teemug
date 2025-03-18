@@ -8,6 +8,7 @@ import Register from "@/pages/Register";
 import LoginTraditional from "@/pages/ManualLogin";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import DataDeletion from "@/pages/DataDeletion";
+import Logout from '@/pages/Logout';
 
 const AppRouter = () => {
   return (
@@ -23,6 +24,7 @@ const AppRouter = () => {
         <Route path="/login-traditional" element={<LoginTraditional />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/data-deletion" element={<DataDeletion />} />
+        <Route path="/logout" element={<Logout />} /> 
       </Routes>
     </BrowserRouter>
   );

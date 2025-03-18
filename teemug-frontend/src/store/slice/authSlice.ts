@@ -6,10 +6,13 @@ interface AuthState {
   token: string | null;
 }
 
+const savedAuthData = localStorage.getItem('authData');
+const parsedAuthData = savedAuthData ? JSON.parse(savedAuthData) : null;
+
 const initialState: AuthState = {
-  isAuthenticated: false,
-  user: null,
-  token: null,
+  isAuthenticated: !! parsedAuthData,
+  user: parsedAuthData?.user || null,
+  token: parsedAuthData?.token || null,
 };
 
 const authSlice = createSlice({
@@ -20,12 +23,16 @@ const authSlice = createSlice({
       state.isAuthenticated = true;
       state.user = action.payload.user;
       state.token = action.payload.token;
+          
+      localStorage.setItem('authData', JSON.stringify(action.payload));
     },
     logout(state) {
       state.isAuthenticated = false;
       state.user = null;
-      state.token = null;
-    },
+      state.token = null;        
+      localStorage.removeItem('authData');
+    }
+    
   },
 });
 

@@ -1,8 +1,11 @@
-import { useState } from "react";
-import i18n from "i18next";
+// src/components/layout/Navbar.tsx
+import { useAppSelector } from '@/hooks/useAppSelector';
+import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 const Navbar = () => {
-  const [isLoggedIn] = useState(false);
+  const { isAuthenticated, user } = useAppSelector((state) => state.auth);
+  const { t } = useTranslation();
 
   const handleLanguageChange = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -27,28 +30,39 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarOptions">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-         
+
+            {/* Dropdown de Usuário */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle d-flex align-items-center"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >Login
-                <i className="bi bi-person-circle"></i>
+              >
+                {isAuthenticated && user?.picture && (
+                  <img
+                    src={user.picture}
+                    alt="User"
+                    width="32"
+                    height="32"
+                    className="rounded-circle me-2"
+                  />
+                )}
+                {isAuthenticated ? user?.name : t('login')}
               </a>
               <ul className="dropdown-menu dropdown-menu-end">
-                {!isLoggedIn ? (
+                {!isAuthenticated ? (
                   <>
-                    <li><a className="dropdown-item" href="/login">Login</a></li>
-                    <li><a className="dropdown-item" href="/register">Register</a></li>                    
+                    <li><a className="dropdown-item" href="/login">{t('login')}</a></li>
+                    <li><a className="dropdown-item" href="/register">{t('register')}</a></li>
                   </>
                 ) : (
-                  <li><a className="dropdown-item" href="/logout">Logout</a></li>
+                  <li><a className="dropdown-item" href="/logout">{t('logout')}</a></li>
                 )}
               </ul>
             </li>
+
            
             <li className="nav-item dropdown ms-2">
               <a
@@ -67,6 +81,7 @@ const Navbar = () => {
                 <li><button className="dropdown-item" onClick={() => handleLanguageChange('fr')}>Français</button></li>
               </ul>
             </li>
+
           </ul>
         </div>
       </div>
