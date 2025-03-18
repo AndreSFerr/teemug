@@ -1,7 +1,14 @@
 ﻿using MediatR;
-using TeeMugShop.Domain.Entities;
+using TeeMugShop.Application.DTOs;
+using TeeMugShop.Domain.Enums;
 
 namespace TeeMugShop.Application.Feactures.Products.Queries
 {
-    public class GetAllProductsQuery : IRequest<List<Product>> { }
+    public class GetAllProductsQuery : IRequest<List<ProductDto>>
+    {
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+        public decimal? Price { get; set; }
+        public CategoryType? Category { get; set; } 
+    }
 }

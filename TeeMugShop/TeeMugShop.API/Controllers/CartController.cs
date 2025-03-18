@@ -5,17 +5,28 @@ using TeeMugShop.Application.Carts.Queries;
 
 namespace TeeMugShop.API.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class CartController : ControllerBase
     {
         private readonly IMediator _mediator;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mediator"></param>
         public CartController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +34,11 @@ namespace TeeMugShop.API.Controllers
             return Ok(carts);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
@@ -33,6 +49,11 @@ namespace TeeMugShop.API.Controllers
             return Ok(cart);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateCartCommand command)
         {
@@ -40,6 +61,12 @@ namespace TeeMugShop.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id }, null);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateCartCommand command)
         {
@@ -50,6 +77,11 @@ namespace TeeMugShop.API.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {

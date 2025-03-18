@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom px-3">
       <div className="container-fluid justify-content-between">
-        <a className="navbar-brand" href="/">TShirt Mug Shop</a>
+        <a className="navbar-brand" href="/">TeeMug Shop Co.</a>
 
         <button
           className="navbar-toggler"
@@ -30,8 +30,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarOptions">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-
-            {/* Dropdown de Usuário */}
+          
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle d-flex align-items-center"
@@ -40,7 +39,7 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {isAuthenticated && user?.picture && (
+                {isAuthenticated && user?.picture && (                 
                   <img
                     src={user.picture}
                     alt="User"
@@ -51,6 +50,7 @@ const Navbar = () => {
                 )}
                 {isAuthenticated ? user?.name : t('login')}
               </a>
+              
               <ul className="dropdown-menu dropdown-menu-end">
                 {!isAuthenticated ? (
                   <>
