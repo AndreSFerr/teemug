@@ -1,9 +1,12 @@
 // src/pages/Register.tsx
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useRegisterMutation } from "@/store/api/authApi";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const [fullName, setFullName] = useState("");
   const [address, setAddress] = useState("");
@@ -12,7 +15,9 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [registerUser, { isLoading }] = useRegisterMutation();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const formData = {
@@ -24,8 +29,17 @@ const Register = () => {
       password,
     };
 
-    console.log("📦 Dados enviados:", formData);
-    // Aqui futuramente você envia esses dados para o backend (via Redux ou API)
+    try {
+      const result = await registerUser(formData).unwrap();
+      console.log("✅ Registro bem-sucedido:", result);
+
+      alert(t("registerSuccess") || "Cadastro realizado com sucesso!");
+      navigate("/login"); // redireciona para login após registro
+
+    } catch (err: any) {
+      console.error("❌ Erro no registro:", err);
+      alert(t("registerError") || "Erro ao registrar. Verifique os dados e tente novamente.");
+    }
   };
 
   return (
@@ -33,7 +47,6 @@ const Register = () => {
       <h2 className="text-center mb-4">{t("registerTitle") || "Cadastrar-se"}</h2>
 
       <form onSubmit={handleSubmit}>
-        {/* Nome */}
         <div className="mb-3">
           <label className="form-label">{t("fullName") || "Nome completo"}</label>
           <input
@@ -45,7 +58,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Morada */}
         <div className="mb-3">
           <label className="form-label">{t("address") || "Endereço (Morada)"}</label>
           <input
@@ -57,7 +69,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Email */}
         <div className="mb-3">
           <label className="form-label">{t("email") || "Email"}</label>
           <input
@@ -69,7 +80,6 @@ const Register = () => {
           />
         </div>
 
-        {/* NIF */}
         <div className="mb-3">
           <label className="form-label">{t("nif") || "NIF"}</label>
           <input
@@ -81,7 +91,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Telefone */}
         <div className="mb-3">
           <label className="form-label">{t("phone") || "Telefone"}</label>
           <input
@@ -93,7 +102,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Senha */}
         <div className="mb-3">
           <label className="form-label">{t("password") || "Senha"}</label>
           <input
@@ -105,10 +113,9 @@ const Register = () => {
           />
         </div>
 
-        {/* Botão cadastrar */}
         <div className="text-center">
-          <button type="submit" className="btn btn-primary w-100">
-            {t("register") || "Cadastrar"}
+          <button type="submit" className="btn btn-primary w-100" disabled={isLoading}>
+            {isLoading ? t("loading") || "Aguarde..." : t("register") || "Cadastrar"}
           </button>
         </div>
       </form>

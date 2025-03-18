@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using TeeMugShop.Application.Features.Accounts.Commands;
 using TeeMugShop.Domain.Entities.Application;
 
-
-namespace TeeMugShop.Application.Feactures.Accounts.Handlers
+namespace TeeMugShop.Application.Features.Accounts.Handlers
 {
     public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, bool>
     {
@@ -16,7 +15,14 @@ namespace TeeMugShop.Application.Feactures.Accounts.Handlers
         }
 
         public async Task<bool> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
-        {
+        {            
+            
+            var existingUser = await _userManager.FindByEmailAsync(request.Email);
+            if (existingUser != null)
+            {
+                return false; 
+            }
+
             var user = new ApplicationUser
             {
                 UserName = request.Email,
@@ -24,7 +30,8 @@ namespace TeeMugShop.Application.Feactures.Accounts.Handlers
                 FullName = request.FullName,
                 Address = request.Address,
                 NIF = request.NIF,
-                PhoneNumber = request.Phone
+                PhoneNumber = request.Phone,
+                EmailConfirmed = true 
             };
 
             var result = await _userManager.CreateAsync(user, request.Password);

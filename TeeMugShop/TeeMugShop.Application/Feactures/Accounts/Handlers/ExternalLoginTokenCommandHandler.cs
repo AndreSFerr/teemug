@@ -1,15 +1,12 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using System.Text.Json;
 using TeeMugShop.Application.Common.Settings;
 using TeeMugShop.Application.DTOs.Auth;
 using TeeMugShop.Domain.Entities.Application;
-using Microsoft.IdentityModel.Tokens;
 using TeeMugShop.Application.Feactures.Accounts.Commands;
+using TeeMugShop.Application.Common.Interfaces;
 
 namespace TeeMugShop.Application.Features.Accounts.Commands
 {
@@ -17,11 +14,13 @@ namespace TeeMugShop.Application.Features.Accounts.Commands
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly JwtSettings _jwtSettings;
+        private readonly IJwtTokenService _jwtTokenService;
 
-        public ExternalLoginTokenCommandHandler(UserManager<ApplicationUser> userManager, IOptions<JwtSettings> jwtOptions)
+        public ExternalLoginTokenCommandHandler(UserManager<ApplicationUser> userManager, IOptions<JwtSettings> jwtOptions, IJwtTokenService jwtTokenService)
         {
             _userManager = userManager;
             _jwtSettings = jwtOptions.Value;
+            _jwtTokenService = jwtTokenService;
         }
 
         public async Task<ExternalLoginTokenResult> Handle(ExternalLoginTokenCommand request, CancellationToken cancellationToken)
@@ -85,8 +84,8 @@ namespace TeeMugShop.Application.Features.Accounts.Commands
                 if (!createResult.Succeeded)
                     return new ExternalLoginTokenResult { Success = false };
             }
-
-            var jwt = GenerateJwtToken(user);
+                       
+            var jwt = _jwtTokenService.GenerateToken(user);
 
             return new ExternalLoginTokenResult
             {
@@ -99,33 +98,8 @@ namespace TeeMugShop.Application.Features.Accounts.Commands
                     Picture = picture
                 }
             };
-        }        
-
-        private string GenerateJwtToken(ApplicationUser user)
-        {
-            if (string.IsNullOrWhiteSpace(_jwtSettings.SecretKey) || _jwtSettings.SecretKey.Length < 16)
-                throw new InvalidOperationException("JWT SecretKey is missing or too short (min 16 characters).");
-
-            var claims = new[]
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-                new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
-                new Claim("name", user.FullName ?? "")
-            };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: _jwtSettings.Issuer,
-                audience: _jwtSettings.Audience,
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(_jwtSettings.TokenExpirationHours),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        }      
+       
 
     }
 }

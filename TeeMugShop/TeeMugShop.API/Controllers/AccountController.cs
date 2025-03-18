@@ -36,6 +36,24 @@ namespace TeeMugShop.API.Controllers
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return Unauthorized(result);
+        }
+
+
+        /// <summary>
         /// Registers a new user in the system.
         /// </summary>
         /// <param name="command">User registration data.</param>

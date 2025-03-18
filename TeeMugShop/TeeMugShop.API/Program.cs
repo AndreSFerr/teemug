@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using TeeMugShop.Application;
 using TeeMugShop.Application.Common.Interfaces;
+using TeeMugShop.Application.Common.Services;
 using TeeMugShop.Application.Common.Settings;
 using TeeMugShop.Domain.Entities.Application;
 using TeeMugShop.Infrastructure.Persistence;
@@ -94,6 +95,7 @@ services.AddSwaggerGen();
 services.AddApplication();
 services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 services.AddScoped<ApplicationDbContextInitialiser>();
+services.AddScoped<IJwtTokenService, JwtTokenService>();
 
 // Controllers
 services.AddControllers();

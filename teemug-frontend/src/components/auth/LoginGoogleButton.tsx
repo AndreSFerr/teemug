@@ -3,12 +3,11 @@ import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setAuthData } from '@/store/slice/authSlice';
 import { GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom'; // 👈 adicionar
-import { useEffect } from 'react';
 
 const LoginGoogleButton = () => {
   const [externalLogin] = useExternalLoginMutation();
   const dispatch = useAppDispatch();
-  const navigate = useNavigate(); // 👈 hook para redirecionamento
+  const navigate = useNavigate(); 
 
   const handleGoogleSuccess = async (response: any) => {
     try {
@@ -21,9 +20,8 @@ const LoginGoogleButton = () => {
         user: result.user,
         token: result.token,
       }));
-
-      // Redirecionar após login
-      navigate('/'); // 👈 vai para Home
+      
+      navigate('/'); 
     } catch (err) {
       console.error('Erro no login Google:', err);
     }

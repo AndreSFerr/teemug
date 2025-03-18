@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projetos\\teemug\\TeeMugShop\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3B281F64-5974-453A-8141-F0DC884EF671}|TeeMugShop.Application\\TeeMugShop.Application.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.application\\feactures\\accounts\\handlers\\externallogintokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B281F64-5974-453A-8141-F0DC884EF671}|TeeMugShop.Application\\TeeMugShop.Application.csproj|solutionrelative:teemugshop.application\\feactures\\accounts\\handlers\\externallogintokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|c:\\projetos\\teemug\\teemugshop\\teemugshop.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3FE16C0-2D6D-439A-87DA-D22499B2FF8F}|TeeMugShop.API\\TeeMugShop.API.csproj|solutionrelative:teemugshop.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,76 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExternalLoginTokenCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\ExternalLoginTokenCommandHandler.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\ExternalLoginTokenCommandHandler.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\ExternalLoginTokenCommandHandler.cs",
-              "RelativeToolTip": "TeeMugShop.Application\\Feactures\\Accounts\\Handlers\\ExternalLoginTokenCommandHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAswGUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:47:52.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\appsettings.json",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\appsettings.json",
-              "RelativeToolTip": "TeeMugShop.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-18T09:38:28.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TeeMugShop.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-18T09:28:35.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "TeeMugShop.API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAIwHoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:17:30.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Program.cs",
-              "RelativeDocumentMoniker": "TeeMugShop.API\\Program.cs",
-              "ToolTip": "C:\\Projetos\\teemug\\TeeMugShop\\TeeMugShop.API\\Program.cs",
-              "RelativeToolTip": "TeeMugShop.API\\Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADwAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:17:26.652Z",
-              "EditorCaption": ""
             }
           ]
         }
