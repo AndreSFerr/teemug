@@ -1,7 +1,20 @@
 import { useGetProductsQuery } from "@/store/api/productsApi";
+import { useAppDispatch } from "@/hooks/useAppDispatch";
+import { addToCart } from "@/store/slice/cartSlice";
 
 const TShirt = () => {
   const { data: tshirts, isLoading } = useGetProductsQuery({ category: 1 });
+  const dispatch = useAppDispatch();
+
+  const handleAddToCart = (product: any) => {
+    dispatch(addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      imageUrl: product.imageUrl,
+      quantity: 1
+    }));
+  };
 
   return (
     <div className="row row-cols-1 row-cols-md-4 g-4">
@@ -21,7 +34,12 @@ const TShirt = () => {
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.description}</p>
                 <p><strong>€ {product.price}</strong></p>
-                <button className="btn btn-primary w-100">Add to Cart</button>
+                <button
+                  className="btn btn-primary w-100"
+                  onClick={() => handleAddToCart(product)}
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
