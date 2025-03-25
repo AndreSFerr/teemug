@@ -1,10 +1,26 @@
-﻿version: '3.8'
+﻿version: '3.9'
 
 services:
-   api:
+  mysql:
+    image: mysql:8.0
+    container_name: teemugshop-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: teemugshopdb
+      MYSQL_USER: teemug
+      MYSQL_PASSWORD: teemug123
+    ports:
+      - "3307:3306"
+    volumes:
+      - teemugshop-db-data:/var/lib/mysql
+    networks:
+      - teemug-network
+    restart: always
+
+  api:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: src/TeeMugShop.API/Dockerfile
     container_name: teemugshop-api
     ports:
       - "5150:80"
@@ -19,25 +35,24 @@ services:
       - mysql
     networks:
       - teemug-network
-      
-   mysql:
-    image: mysql:8.0
-    container_name: teemugshop-mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: teemugshopdb
-      MYSQL_USER: teemug
-      MYSQL_PASSWORD: teemug123
+    restart: always
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: always
     ports:
-      - "3307:3306"
+      - "9000:9000"
+    volumes:
+      - //./pipe/docker_engine://./pipe/docker_engine
+      - portainer_data:/data
     networks:
       - teemug-network
-    volumes:
-      - teemugshop-db-data:/var/lib/mysql
 
 volumes:
   teemugshop-db-data:
+  portainer_data:
 
 networks:
   teemug-network:
-    external: true
+    driver: nat
